@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /WordPress/releases/20180623
+    destination: "%WP_DIRECTORY%" 
 hooks:
   AfterInstall:
     - location: scripts/change_permissions.sh
