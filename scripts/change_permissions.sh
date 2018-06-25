@@ -1,5 +1,5 @@
 #!/bin/bash
-DIR=$1
+DIR="%WP_DIRECTORY%"
 cp /wp-upload/wp-config.php ${DIR}
 cd ${DIR}/wp-content
 ln -s /wp-upload/uploads uploads
