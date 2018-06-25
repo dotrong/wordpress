@@ -5,7 +5,7 @@ files:
     destination: "%WP_DIRECTORY%" 
 hooks:
   AfterInstall:
-    - location: scripts/change_permissions.sh
+    - location: scripts/change_permissions.sh "%WP_DIRECTORY%"
       timeout: 300
       runas: root
   ApplicationStart:
