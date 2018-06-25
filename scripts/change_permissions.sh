@@ -5,9 +5,10 @@ cd ${DIR}/wp-content
 ln -s /wp-upload/uploads uploads
 cd /var/www
 #rm html
-if [ -f html ]
+if [ -L /var/www/html ]
 then
-	rm html
+	rm /var/www/html
 fi
+cd /var/www
 ln -s ${DIR} html
 chown apache:apache -R ${DIR} 
